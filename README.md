@@ -23,22 +23,24 @@ A simple Dockerized Flask microservice that resizes uploaded images to 300x300 p
 
 ---
 
-## Installation & Usage
+##  📦 Installation & Usage
 
-### 1. Clone the Repository
+### Option 1:  🔧 Build and Run Locally
+
+#### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/anekemuna/image-resizer
+git clone https://github.com/anekemuna/image-resizer.git
 cd image-resizer
 ```
 
-### 2. Build the Docker Image
+#### 2. Build the Docker Image
 
 ```bash
 docker build -t image-resizer .
 ```
 
-### 3. Run the Docker Container
+#### 3. Run the Docker Container
 
 ```bash
 docker run --rm -it -p 8085:80 image-resizer
@@ -51,6 +53,23 @@ docker run --rm -it -p 8085:80 image-resizer
 The service will be available at:
 `http://localhost:8085/resize`
 
+---
+### Option 2: 🐳 Use Prebuilt Docker Image from Docker Hub
+
+If you don't want to build locally, just pull and run the image:
+#### 1: Pull the Image
+
+```bash
+docker pull anekemuna/image-resizer:latest
+```
+
+
+#### 2. Run the Container
+docker run --rm -it -p 8085:80 anekemuna/image-resizer:latest
+
+
+Visit:
+👉 `http://localhost:8085/resize`
 ---
 
 ## API Usage
