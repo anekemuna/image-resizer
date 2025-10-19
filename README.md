@@ -70,6 +70,7 @@ docker run --rm -it -p 8085:80 anekemuna/image-resizer:latest
 
 Visit:
 👉 `http://localhost:8085/resize`
+
 ---
 
 ## API Usage
